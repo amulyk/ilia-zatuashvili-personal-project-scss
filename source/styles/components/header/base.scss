@@ -1,15 +1,11 @@
-.header {
+header {
+    background-color: #0E0E0E;
     padding: 26px 0;
-
-    .container {
-        width: 1188px;
-        margin: 0 auto;
-    }
 
     .wrapper {
         display: flex;
-        justify-content: space-between;
         align-items: center;
+        justify-content: space-between;
 
         &img{
             width: 113px;
