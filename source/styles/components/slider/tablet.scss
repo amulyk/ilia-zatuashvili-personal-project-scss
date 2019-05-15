@@ -1,0 +1,57 @@
+.slider {
+    padding: 140px 0 184px;
+
+    .slider-wrapper {
+
+        h3 {
+            margin-bottom: 6px;
+            font-size: 62px;
+        }
+
+        h4 {
+            margin-bottom: 18px;
+            font-family: $font-3;
+            font-size: 70px;
+            font-weight: 700;
+        }
+
+        p {
+            margin-right: 6px;
+            margin-bottom: 40px;
+            font-family: $font-2;
+            font-size: 20px;
+            font-weight: 200;
+        }
+
+        .bg-readmore {
+            @include flex-center;
+            width: 144px;
+            height: 44px;
+            background-color: $color-2;
+
+            a {
+                @include border;
+                padding: 11px 31px;
+                background-color: $color-2;
+                color: $color-1;
+                font-family: $font-2;
+                font-size: 13px;
+                font-weight: 700;
+            }
+        }
+    }
+
+    .left-arrow{
+        position: absolute;
+        top: 50%;
+        left: 2%;
+        cursor: pointer;
+    }
+
+    .right-arrow{
+        position: absolute;
+        top: 50%;
+        right: 2%;
+        cursor: pointer;
+    }
+}

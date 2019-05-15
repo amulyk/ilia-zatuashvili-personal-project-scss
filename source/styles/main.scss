@@ -2,5 +2,10 @@
 @import 'fonts';
 @import 'palette';
 @import 'base';
+@import 'mixin';
 @import 'media-queries';
+
+// components
 @import 'components/header/index.scss';
+@import 'components/slider/index.scss';
+@import 'components/about-us/index.scss';

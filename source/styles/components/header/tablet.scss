@@ -1,3 +1,22 @@
-.header {
-    background: green;
+header {
+    background-color: #0E0E0E;
+
+    .container {
+        max-width: 717px;
+    }
+
+    .wrapper {
+
+        .logo-wrapper{
+            transform: translateY(-4px);
+        }
+
+        .menu {
+            display: none;
+        }
+
+        .burger {
+            display: flex;
+        }
+    }
 }

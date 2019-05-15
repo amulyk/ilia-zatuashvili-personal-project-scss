@@ -1,0 +1,66 @@
+.slider {
+    position: relative;
+    width: 100%;
+    padding: 244px 0 256px;
+    background-color: #292929;
+
+    .slider-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: $color-1;
+
+        h3 {
+            margin-bottom: 6px;
+            font-family: $font-2;
+            font-size: 62px;
+            font-weight: 200;
+        }
+
+        h4 {
+            margin-bottom: 18px;
+            font-family: $font-3;
+            font-size: 70px;
+            font-weight: 700;
+        }
+
+        p {
+            margin-right: 6px;
+            margin-bottom: 40px;
+            font-family: $font-2;
+            font-size: 20px;
+            font-weight: 200;
+        }
+
+        .bg-readmore {
+            @include flex-center;
+            width: 144px;
+            height: 44px;
+            background-color: $color-2;
+
+            a {
+                @include border;
+                padding: 11px 31px;
+                background-color: $color-2;
+                color: $color-1;
+                font-family: $font-2;
+                font-size: 13px;
+                font-weight: 700;
+            }
+        }
+    }
+
+    .left-arrow{
+        position: absolute;
+        top: 50%;
+        left: 2%;
+        cursor: pointer;
+    }
+
+    .right-arrow{
+        position: absolute;
+        top: 50%;
+        right: 2%;
+        cursor: pointer;
+    }
+}
