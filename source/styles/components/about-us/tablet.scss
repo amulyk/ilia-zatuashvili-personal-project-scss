@@ -1,124 +1,40 @@
 .about-us {
-    padding: 140px 0 184px;
 
-    .who-we-are {
-        @include flex-center;
-        flex-direction: column;
-        margin-right: 18px;
-        margin-bottom: 95px;
-
-        h2 {
-            margin-bottom: 14px;
-            color: $color-3;
-            font-family: $font-2;
-            font-size: 31px;
-            font-weight: 500;
-
-            span {
-                color: $color-2;
-            }
-        }
-
-        div {
-            @include flex-center;
-
-            .small-line {
-                width: 37px;
-                height: 1px;
-                background-color: $color-4;
-            }
-
-            img {
-                width: 16px;
-                height: 17px;
-                margin: 0 9px;
-            }
-        }
+    .container {
+        max-width: 718px;
     }
 
     .feature-wrapper {
-        @include flex-between;
+        flex-direction: column;
+        align-items: center;
 
         .monitor {
-            transform: translateX(-3px);
+           height: 420px;
+           margin-bottom: 20px;
+
         }
 
         .feature-text {
-            width: 572px;
-            margin-right: 18px;
+            display: block;
+            width: 717px;
 
             h4 {
-                margin-bottom: 24px;
-                color: $color-3;
-                font-family: $font-2;
-                font-size: 31px;
-                font-weight: 700;
-                word-spacing: -5px;
+                font-size: 25px;
+                word-spacing: 0;
+                
+
+                &::after {
+                    content: '';
+                    display: block;
+                    width: 717px;
+                    height: 1px;
+                    background-color: $color-6;
+                    margin-top: 20px;
+                }
             }
 
             p {
-                margin-bottom: 48px;
-                color: $color-5;
-                font-family: $font-1;
-                font-size: 14px;
-                line-height: 27px;
-            }
-
-            .feature-list {
-                @include flex-between;
-                flex-wrap: wrap;
-
-                .list-item {
-                    @include flex-between;
-                    margin-bottom: 5px;
-
-                    img {
-                        margin-right: 26px;
-                    }
-
-                    div {
-                        width: 185px;
-
-                        h6 {
-                            margin-bottom: 11px;
-                            color: $color-3;
-                            font-family: $font-2;
-                            font-size: 18px;
-                            font-weight: 700;
-                        }
-
-                        p {
-                            font-size: 13px;
-                            line-height: 22px;
-                        }
-                    }
-                }
-
-                .list-item2 {
-                    @include flex-between;
-                    margin-right: -12px;
-
-                    img {
-                        margin-right: 26px;
-                    }
-
-                    div {
-                        width: 185px;
-
-                        h6 {
-                            margin-bottom: 11px;
-                            color: $color-3;
-                            font-family: $font-2;
-                            font-size: 18px;
-                            font-weight: 700;
-                        }
-
-                        p {
-                            font-size: 13px;
-                            line-height: 22px;
-                        }
-                    }
-                }
+                font-size: 13px;
             }
         }
     }

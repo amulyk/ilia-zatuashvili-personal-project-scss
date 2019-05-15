@@ -1,3 +1,13 @@
-.slider {
-    background: #292929;
+.about-us {
+
+    .container {
+        max-width: 1100px;
+    }
+
+    .feature-wrapper {
+
+        .monitor {
+            transform: scale(.9);
+        }
+    }
 }

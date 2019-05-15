@@ -1,3 +1,14 @@
 .slider {
-    background: #292929;
+
+    .container {
+        max-width: 900px;
+    }
+
+    .left-arrow {
+        display: none;
+    }
+
+    .right-arrow {
+        display: none;
+    }
 }
