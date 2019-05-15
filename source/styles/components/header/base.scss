@@ -1,28 +1,41 @@
 header {
-    background-color: #0E0E0E;
     padding: 26px 0;
+    background-color: #0E0E0E;
 
     .wrapper {
         display: flex;
         align-items: center;
         justify-content: space-between;
 
-        &img{
-            width: 113px;
-            height: 50px;
+        .logo-wrapper {
+            display: flex;
+
+            a {
+                display: flex;
+                align-items: flex-end;
+                color: #FFFFFF;
+                font-family: $font-2;
+                font-size: 36px;
+                font-weight: 200;
+
+                img {
+                    width: 27px;
+                    height: 50px;
+                }
+            }
         }
 
-        .menu{
+        .menu {
             font-family: $font-1;
 
             ul {
                 display: flex;
 
-                li{
+                li {
                     margin-right: 40px;
 
-                    &:last-child{
-                        margin-right: 0;
+                    &:last-child {
+                        margin-right: 20px;
                     }
 
                     a {
@@ -33,5 +46,4 @@ header {
             }
         }
     }
-
 }
