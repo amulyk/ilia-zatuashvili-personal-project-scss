@@ -1,3 +1,48 @@
-.header {
-    background: yellow;
+.slider {
+    padding: 48px 0 57px;
+
+    .container {
+        max-width: 280px;
+    }
+
+    .left-arrow {
+        display: none;
+    }
+
+    .right-arrow {
+        display: none;
+    }
+
+    .slider-wrapper {
+        transform: translateX(-3px);
+        text-align: center;
+
+        h3 {
+            margin-bottom: 3px;
+            font-size: 25px;
+        }
+
+        h4 {
+            margin-bottom: 5px;
+            font-size: 30px;
+            letter-spacing: -1px
+        }
+
+        p {
+            margin-bottom: 7px;
+            transform: translateX(7px);
+            font-size: 9px;
+        }
+
+        .bg-readmore {
+            width: 64px;
+            height: 19px;
+            transform: translateX(3px);
+
+            a {
+                padding: 3px 10px 3px 10px;
+                font-size: 7px;
+            }
+        }
+    }
 }

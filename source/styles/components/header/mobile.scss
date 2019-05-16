@@ -1,3 +1,41 @@
-.header {
-    background: yellow;
+header {
+    padding: 5px 0 12px;
+    background-color: #0E0E0E;
+
+    .container {
+        max-width: 280px;
+    }
+
+    .wrapper {
+
+        .logo-wrapper {
+            display: flex;
+
+            a {
+
+                img {
+                    width: 21px;
+                }
+
+                span {
+                    transform: translateY(-5px);
+                    font-size: 27px;
+                }
+            }
+        }
+
+        .menu {
+            display: none;
+        }
+
+        .burger {
+            display: flex;
+
+            img {
+                width: 48px;
+                height: 31px;
+                transform: translateY(3px);
+            }
+        }
+    }
 }
