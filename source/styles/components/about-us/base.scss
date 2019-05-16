@@ -5,33 +5,51 @@
         @include flex-center;
         flex-direction: column;
         margin-right: 18px;
-        margin-bottom: 95px;
+        margin-bottom: 82px;
 
         h2 {
+            position: relative;
             margin-bottom: 14px;
+            padding-bottom: 30px;
             color: $color-3;
             font-family: $font-2;
             font-size: 31px;
             font-weight: 500;
 
+            &::before {
+                content: '';
+                display: block;
+                position: absolute;
+                bottom: 5px;
+                left: 22%;
+                width: 108px;
+                height: 1px;
+                background-color: #D3D3D3;
+            }
+
+            &::after {
+                content: '';
+                display: inline-block;
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                width: 29px;
+                height: 17px;
+                transform: translateX(-50%);
+                background-color: #FFFFFF;
+                background-image: url(/images/about-us/speak-icon.png);
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
             span {
                 color: $color-2;
             }
-        }
-
-        div {
-            @include flex-center;
 
             .small-line {
                 width: 37px;
                 height: 1px;
                 background-color: $color-4;
-            }
-
-            img {
-                width: 16px;
-                height: 17px;
-                margin: 0 9px;
             }
         }
     }
@@ -40,14 +58,12 @@
         @include flex-between;
 
         .monitor {
-            width: 510px;
-            height: 414px;
-            transform: translateX(-3px);
+            margin-top: 1px;
+            transform: translateX(-5px);
         }
 
         .feature-text {
-            width: 572px;
-            margin-right: 18px;
+            width: 590px;
 
             h4 {
                 margin-bottom: 24px;
@@ -58,8 +74,8 @@
                 word-spacing: -5px;
             }
 
-            p {
-                margin-bottom: 48px;
+            > p {
+                margin-bottom: 46px;
                 color: $color-5;
                 font-family: $font-1;
                 font-size: 14px;
@@ -69,66 +85,80 @@
             .feature-list {
                 @include flex-between;
 
-                .list-wrap {
+                flex-wrap: wrap;
+                width: 587px;
+
+                .feature {
                     display: flex;
-                    width: 587px;
-                    flex-wrap: wrap;
+                    align-items: flex-start;
+                    margin-bottom: 52px;
 
-                    .feature {
+                    &::before {
+                        content: '';
                         display: flex;
-                        align-items: flex-start;
+                        align-items: center;
+                        justify-content: center;
+                        width: 63px;
+                        height: 63px;
+                        margin-right: 28px;
+                        border-radius: 50%;
+                        background-color: $color-7;
+                        background-image: url(/images/about-us/feature1.png);
+                    }
 
-                        &::before {
-                            content: '';
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            width: 63px;
-                            height: 63px;
-                            margin-right: 28px;
-                            border-radius: 50%;
-                            background-color: $color-7;
-                            background-image: url(/images/about-us/feature1.png);
-                        }
+                    div {
+                        margin-top: 3px;
 
                         h3 {
                             margin-bottom: 11px;
                             font-family: $font-2;
                             font-weight: 700;
+                            letter-spacing: 1px;
                         }
 
                         p {
+                            font-family: $font-1;
                             width: 185px;
                             font-size: 13px;
+                            line-height: 22px;
                         }
                     }
+                }
 
-                    .second {
+                .second {
 
-                        &::before {
-                            content: '';
-                            display: block;
-                            background-image: url(/images/about-us/feature2.png);
-                        }
+                    &::before {
+                        content: '';
+                        display: block;
+                        background-image: url(/images/about-us/feature2.png);
                     }
+                }
 
-                    .third {
+                .third {
 
-                        &::before {
-                            content: '';
-                            display: block;
-                            background-image: url(/images/about-us/feature3.png);
-                        }
+                    &::before {
+                        content: '';
+                        display: block;
+                        background-image: url(/images/about-us/feature3.png);
                     }
+                }
 
-                    .fourth {
+                .fourth {
 
-                        &::before {
-                            content: '';
-                            display: block;
-                            background-image: url(/images/about-us/feature4.png);
-                        }
+                    &::before {
+                        content: '';
+                        display: block;
+                        background-image: url(/images/about-us/feature4.png);
                     }
+                }
+
+                a {
+                    display: none;
+                    padding: 13px 34px 14px 29px;
+                    background-color: $color-2;
+                    color: $color-1;
+                    font-family: $font-2;
+                    font-weight: 700;
                 }
             }
         }

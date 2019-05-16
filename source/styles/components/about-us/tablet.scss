@@ -1,7 +1,26 @@
 .about-us {
+    padding: 77px 0 127px;
 
     .container {
         max-width: 718px;
+    }
+
+    .who-we-are {
+        margin-right: 0;
+        margin-bottom: 57px;
+        transform: translateX(16px);
+
+        h2 {
+            margin-right: 29px;
+            font-size: 29px;
+            font-weight: 700;
+
+            &::before {
+                content: '';
+                display: block;
+                bottom: 7px;
+            }
+        }
     }
 
     .feature-wrapper {
@@ -9,9 +28,7 @@
         align-items: center;
 
         .monitor {
-           height: 420px;
-           margin-bottom: 20px;
-
+            margin-bottom: 20px;
         }
 
         .feature-text {
@@ -19,22 +36,69 @@
             width: 717px;
 
             h4 {
+                margin-bottom: 16px;
                 font-size: 25px;
                 word-spacing: 0;
-                
+                word-spacing: -5px;
 
                 &::after {
                     content: '';
                     display: block;
                     width: 717px;
                     height: 1px;
+                    margin-top: 19px;
                     background-color: $color-6;
-                    margin-top: 20px;
                 }
             }
 
-            p {
+            > p {
+                margin-bottom: 61px;
                 font-size: 13px;
+                line-height: 24px;
+            }
+
+            .feature-list {
+                display: block;
+                flex-wrap: nowrap;
+                width: 718px;
+
+                .feature {
+                    margin-bottom: 50px;
+
+                    &:nth-last-of-type(4) {
+                        display: none;
+                    }
+
+                    &::before {
+                        content: '';
+                        width: 16px;
+                        height: 16px;
+                        margin-right: 14px;
+                        background-color: #FFFFFF;
+                        background-image: url(../../../images/about-us/check-icon.png);
+                    }
+
+                    div {
+                        display: flex;
+                        align-items: center;
+
+                        h3 {
+                            display: none;
+                        }
+
+                        p {
+                            width: 545px;
+                            line-height: 10px;
+                        }
+                    }
+                }
+
+                a {
+                    display: inline-block;
+                    margin-top: 17px;
+                    padding: 13px 33px 16px 29px;
+                    font-size: 13px;
+                }
             }
         }
     }

@@ -1,13 +1,45 @@
 .about-us {
 
     .container {
-        max-width: 900px;
+        width: 900px;
     }
 
     .feature-wrapper {
+        flex-direction: column;
+        align-items: center;
 
         .monitor {
-            transform: scale(.7);
+            margin-bottom: 20px;
+        }
+
+        .feature-text {
+            display: block;
+            width: 900px;
+
+            h4 {
+                font-size: 25px;
+                word-spacing: 0;
+                
+
+                &::after {
+                    content: '';
+                    display: block;
+                    width: 900px;
+                    height: 1px;
+                    background-color: $color-6;
+                    margin-top: 20px;
+                }
+            }
+
+            p {
+                font-size: 13px;
+            }
+
+            .feature-list {
+                @include flex-between;
+
+                width: 900px;
+            }
         }
     }
 }
