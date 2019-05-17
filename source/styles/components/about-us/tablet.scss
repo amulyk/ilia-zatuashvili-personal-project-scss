@@ -8,10 +8,8 @@
     .who-we-are {
         margin-right: 0;
         margin-bottom: 57px;
-        transform: translateX(16px);
 
         h2 {
-            margin-right: 29px;
             font-size: 29px;
             font-weight: 700;
 
@@ -38,8 +36,8 @@
             h4 {
                 margin-bottom: 16px;
                 font-size: 25px;
-                word-spacing: 0;
-                word-spacing: -5px;
+                letter-spacing: -1px;
+                word-spacing: 1px;
 
                 &::after {
                     content: '';
@@ -75,7 +73,7 @@
                         height: 16px;
                         margin-right: 14px;
                         background-color: #FFFFFF;
-                        background-image: url(../../../images/about-us/check-icon.png);
+                        background-image: url(/images/about-us/check-icon.png);
                     }
 
                     div {
