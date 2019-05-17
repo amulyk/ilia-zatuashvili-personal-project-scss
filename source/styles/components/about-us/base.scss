@@ -1,8 +1,9 @@
 .about-us {
-    padding: 118px 0 127px;
+    padding: 118px 0 108px;
 
     .who-we-are {
         @include flex-center;
+
         flex-direction: column;
         margin-right: 18px;
         margin-bottom: 82px;
@@ -109,16 +110,16 @@
                     div {
 
                         h3 {
+                            margin-top: 3px;
                             margin-bottom: 11px;
                             font-family: $font-2;
                             font-weight: 700;
                             letter-spacing: 1px;
-                            margin-top: 3px
                         }
 
                         p {
-                            font-family: $font-1;
                             width: 185px;
+                            font-family: $font-1;
                             font-size: 13px;
                             line-height: 22px;
                         }

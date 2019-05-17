@@ -1,5 +1,5 @@
 .slider {
-    padding: 157px 0 183px;
+    height: 592px;
 
     .container {
         width: 718px;
@@ -14,9 +14,10 @@
     }
 
     .slider-wrapper {
+        margin-bottom: 27px;
 
         h3 {
-            margin-bottom: 8px;
+            margin-bottom: 5px;
             font-size: 59px;
         }
 
@@ -26,8 +27,8 @@
         }
 
         p {
+            margin-bottom: 38px;
             font-size: 19px;
-            margin-bottom: 36px;
         }
 
         .bg-readmore {

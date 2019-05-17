@@ -1,13 +1,22 @@
 .slider {
+    @include flex-center;
+
     position: relative;
     width: 100%;
-    padding: 244px 0 256px;
-    background-color: #292929;
+    height: 759px;
+    overflow: hidden;
+    background-color: $color-9;
+
+    img {
+        position: absolute;
+    }
 
     .slider-wrapper {
         display: flex;
+        position: relative;
         flex-direction: column;
         align-items: center;
+        margin-bottom: 10px;
         color: $color-1;
 
         h3 {
@@ -56,15 +65,15 @@
 
     .left-arrow {
         position: absolute;
-        top: 301px;
         left: 20px;
+        transform: translateY(-78px);
         cursor: pointer;
     }
 
     .right-arrow {
         position: absolute;
-        top: 301px;
-        right: 40px;
+        right: 64px;
+        transform: translateY(-78px);
         cursor: pointer;
     }
 }

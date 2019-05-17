@@ -5,13 +5,13 @@
     border-color: $color-1;
 }
 
-@mixin flex-center{
+@mixin flex-center {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-@mixin flex-between{
+@mixin flex-between {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;

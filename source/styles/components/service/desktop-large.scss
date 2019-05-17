@@ -1,0 +1,12 @@
+.service {
+
+    .container {
+        width: 1000px;
+    }
+
+    .service-wrapper {
+        @include flex-between;
+
+        width: 1000px;
+    }
+}

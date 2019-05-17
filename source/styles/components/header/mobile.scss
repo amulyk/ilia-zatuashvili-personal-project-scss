@@ -8,6 +8,16 @@ header {
 
     .wrapper {
 
+        .burger {
+            display: flex;
+
+            img {
+                width: 48px;
+                height: 31px;
+                transform: translateY(3px);
+            }
+        }
+
         .logo-wrapper {
             display: flex;
 
@@ -26,16 +36,6 @@ header {
 
         .menu {
             display: none;
-        }
-
-        .burger {
-            display: flex;
-
-            img {
-                width: 48px;
-                height: 31px;
-                transform: translateY(3px);
-            }
         }
     }
 }
